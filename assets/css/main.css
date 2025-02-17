@@ -2409,9 +2409,79 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
-/* Image */
+/* Confirmation Content */
+	#confirmation-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 2em 0;
+	}
 
+	.confirmation-image {
+		max-width: 100%;
+		height: auto;
+		border-radius: 5px;
+		margin-bottom: 1.5em;
+	}
+
+	.confirmation-heading {
+		font-size: 2em;
+		margin-bottom: 0.5em;
+		color: #ffffff;
+	}
+
+	.confirmation-text {
+		font-size: 1.2em;
+		line-height: 1.6;
+		max-width: 600px;
+		color: rgba(255, 255, 255, 0.75);
+	}
+
+/* Profile Page */
+	.profile-grid {
+		display: grid;
+		grid-template-columns: 200px 1fr;
+		gap: 2em;
+		margin-bottom: 2em;
+	}
+
+	.profile-picture {
+		text-align: center;
+	}
+
+	.profile-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.stats-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1.5em;
+		margin: 2em 0;
+	}
+
+	.stat-box {
+		background: rgba(255, 255, 255, 0.025);
+		border-radius: 5px;
+		padding: 1.5em;
+		text-align: center;
+	}
+
+	.stat-number {
+		font-size: 2.5em;
+		font-weight: 600;
+		margin: 0.5em 0;
+		color: #ffffff;
+	}
+
+/* Image */
 	.image {
+
+
 		border-radius: 5px;
 		border: 0;
 		display: inline-block;
@@ -2427,9 +2497,30 @@ input, select, textarea {
 			max-width: 40%;
 		}
 
-			.image.left img, .image.right img {
-				width: 100%;
-			}
+		.image.left img, .image.right img {
+			width: 100%;
+		}
+
+	/* Form Elements */
+	form .field.half {
+		width: calc(50% - 0.5em);
+		float: left;
+		margin-right: 1em;
+	}
+
+	form .field.half:nth-child(2n) {
+		margin-right: 0;
+	}
+
+	select {
+		background-color: rgba(255, 255, 255, 0.025);
+		border: solid 2px rgba(255, 255, 255, 0.125);
+		border-radius: 5px;
+		color: inherit;
+		padding: 0.5em 1em;
+		width: 100%;
+	}
+
 
 		.image.left {
 			float: left;
